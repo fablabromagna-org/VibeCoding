@@ -6,11 +6,10 @@ import time
 import board
 import neopixel
 
-# RP2040
-#pixels = neopixel.NeoPixel(board.GP21, 8)
+from scegliCPU import LED_PIN, SENSOR_PIN, CPU_NAME, debug_print
+debug_print()
 
-# ESP32-C6
-pixels = neopixel.NeoPixel( board.D6, 8, brightness=0.02, auto_write=False)
+pixels = neopixel.NeoPixel( LED_PIN, 8, brightness=0.02, auto_write=False)
 
 while True:
     for i in range(8):

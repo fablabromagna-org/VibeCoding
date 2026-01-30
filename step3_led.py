@@ -6,11 +6,13 @@ import board
 import neopixel
 import time
 
+from scegliCPU import LED_PIN, SENSOR_PIN, CPU_NAME, debug_print
+debug_print()
+
 NUM_LEDS = 8
-PIN = board.D6   # pin consigliato
 
 pixels = neopixel.NeoPixel(
-    PIN,
+    LED_PIN,
     NUM_LEDS,
     brightness=0.02,
     auto_write=False

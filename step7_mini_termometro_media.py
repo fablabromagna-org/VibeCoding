@@ -11,11 +11,13 @@ import neopixel
 # Configurazione hardware
 # ----------------------------
 NUM_LEDS = 8
-PIXEL_PIN = board.D6
-SENSOR_PIN = board.D2
+
+from scegliCPU import LED_PIN, SENSOR_PIN, CPU_NAME, debug_print
+debug_print()
+
 
 pixels = neopixel.NeoPixel(
-    PIXEL_PIN,
+    LED_PIN,
     NUM_LEDS,
     brightness=0.2,
     auto_write=False
