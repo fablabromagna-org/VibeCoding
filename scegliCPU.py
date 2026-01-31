@@ -7,7 +7,7 @@ BOARD_ID = getattr(board, "board_id", "unknown")
 PINMAP = {
     # ESP32
     "seeed_xiao_esp32c6": ("D9",  "D2"),
-    "makergo_esp32c3_supermini": ("IO6", "IO2"),
+    "makergo_esp32c3_supermini": ("IO20", "IO2"),
 
     # RP2040 / RP2350 (famiglia Pico)
     "raspberry_pi_pico":   ("GP16", "GP26_A0"),

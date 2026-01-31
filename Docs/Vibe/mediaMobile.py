@@ -3,9 +3,10 @@ import board
 import analogio
 import neopixel
 
+from scegliCPU import LED_PIN, SENSOR_PIN, CPU_NAME, debug_print
+debug_print()
+
 NUM_LEDS = 8
-LED_PIN = board.D6
-ADC_PIN = board.D2
 LED_COLOR = (255, 0, 0)
 
 pixels = neopixel.NeoPixel(
@@ -15,7 +16,7 @@ pixels = neopixel.NeoPixel(
     auto_write=False
 )
 
-adc = analogio.AnalogIn(ADC_PIN)
+adc = analogio.AnalogIn( SENSOR_PIN )
 ADC_MAX = 65535
 
 filtered = 0
