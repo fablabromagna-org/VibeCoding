@@ -1,0 +1,22 @@
+Ricorda queste informazioni di contesto.
+
+Sto preparando un corso per ragazzi di scuola di prima Liceo.
+In laboratorio ho un po' di dispositivi ESP32-C3 Supermini e qualche ESP32-C6 XIAO.
+
+A bordo ho già montato il firmware Circuit Python versione 10.
+
+L'idea è di utilizzare 
+- l'ingresso analogico A2 collegato ad un sensore 
+- l'uscita digitale IO20 per pilotare 8 led WS2812.
+
+Sull'ingresso A2 posso usare uno alla volta i sensori della serie Grove di Seeed
+- potenziometro
+- temperatura
+- suono (microfono)
+- luce
+
+E' un corso di Vibe Coding e vorrei che il codice Circuit Python seguisse regole semplici, senza costrutti Python difficili da spiegare in classe.
+Usiamo funzioni solo quando strettamente necessarie, altrimenti solo codice in linea.
+
+Per qualche esperimento con WiFi, il lab ha WiFi con SSID Ospiti-88 e pwd Ospiti-88.
+

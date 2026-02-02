@@ -1,0 +1,9 @@
+Ciabatta 220V
+Controllare aggiornamenti Windows
+Controllare versione di Thonny (serve la 4.1.7)
+
+Controllare funzionamento del Vibe sensor con WiFi SanLab
+Controllare funzionamento del Vibe sensor con WiFi Mikrotik Ospiti-88
+
+
+
