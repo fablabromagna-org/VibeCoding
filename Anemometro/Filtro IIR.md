@@ -1,5 +1,4 @@
-Perfetto.  
-Ti preparo una versione **pulita, pronta da incollare in Obsidian**, coerente con le tue note tecniche.
+
 
 ---
 
