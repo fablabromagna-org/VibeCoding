@@ -66,9 +66,11 @@ Se il sensore Hall dà (P) impulsi per giro:
     
 
 Quindi:
+
 $$
 v \approx k \cdot 2\pi R \cdot \frac{f}{P}  
 $$
+
 
 Questa ti dà una **stima**. Per farla diventare “vera”, devi determinare (k) (o (A)) con calibrazione.
 
