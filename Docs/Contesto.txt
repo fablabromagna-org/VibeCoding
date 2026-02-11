@@ -1,5 +1,6 @@
 Ricorda queste informazioni di contesto.
 
+
 Sto preparando un corso per ragazzi di scuola di prima Liceo.
 In laboratorio ho un po' di dispositivi ESP32-C3 Supermini e qualche ESP32-C6 XIAO.
 
