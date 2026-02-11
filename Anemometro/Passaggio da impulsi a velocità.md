@@ -48,9 +48,11 @@ Spesso (B) è piccolo (offset di soglia/attrito), e (A) è la cosa importante.
 ## Cosa puoi fare “solo con misure meccaniche” (stima)
 
 C’è una costante chiamata **cup factor** (o rapporto tra velocità del vento e velocità tangenziale delle coppe):
+
 $$
 k = \frac{v_{vento}}{\omega R}  
 $$
+
 dove (R) è il raggio dal centro alla coppa e (\omega) è la velocità angolare.  
 Per molti anemometri a coppe, **k è tipicamente tra ~2 e ~3** (ordine di grandezza). Ma varia.
 
