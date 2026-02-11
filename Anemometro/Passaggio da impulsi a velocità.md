@@ -1,6 +1,7 @@
 Prompt:
 
 Credo di poter leggere gli impulsi che arrivano dal sensore di hall.
+
 Non so bene se fa 2 impulsi/giro  o 1 impulso/giro ma lo posso verificare.
 
 Nel caso, sarebbe possibile calcolare quanti impulsi/metro/sec magari misurando il diametro delle 3 mezze sfere, la lunghezza dei braccetti etc... che compongono la girandola?
@@ -28,10 +29,9 @@ Puoi fare una **stima grossolana**, ma la costante dipende tanto da:
 Nella pratica gli anemometri a coppe usano una relazione:
 
 $$
-[  
 v = A \cdot f + B  
-]
 $$
+
 dove:
 
 - (v) è la velocità del vento (m/s)
@@ -49,9 +49,7 @@ Spesso (B) è piccolo (offset di soglia/attrito), e (A) è la cosa importante.
 
 C’è una costante chiamata **cup factor** (o rapporto tra velocità del vento e velocità tangenziale delle coppe):
 $$
-[  
 k = \frac{v_{vento}}{\omega R}  
-]
 $$
 dove (R) è il raggio dal centro alla coppa e (\omega) è la velocità angolare.  
 Per molti anemometri a coppe, **k è tipicamente tra ~2 e ~3** (ordine di grandezza). Ma varia.
@@ -67,10 +65,9 @@ Se il sensore Hall dà (P) impulsi per giro:
 
 Quindi:
 $$
-[  
 v \approx k \cdot 2\pi R \cdot \frac{f}{P}  
-]
 $$
+
 Questa ti dà una **stima**. Per farla diventare “vera”, devi determinare (k) (o (A)) con calibrazione.
 
 ---
