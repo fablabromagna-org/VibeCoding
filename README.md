@@ -1,5 +1,5 @@
 # VibeCoding
-materiali del corso Vibe Coding con Led e Sensori del 2 febbraio 2026
+materiali del corso Vibe Coding con Led e Sensori del 2 febbraio 2026 e del 10 aprile 2026
 
 Esempio di riepilogo usando ChatGPT versione free.
 
