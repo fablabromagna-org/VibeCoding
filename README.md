@@ -4,8 +4,6 @@ materiali del corso Vibe Coding con Led e Sensori del 2 febbraio 2026
 Esempio di riepilogo usando ChatGPT versione free.
 
 ---
-
-````markdown
 # Corso ESP32-C3 + CircuitPython (Vibe Coding)
 
 ## 🎯 Obiettivo
@@ -223,7 +221,5 @@ while True:
 * Poche funzioni
 * Tutto visibile e modificabile
 * Imparare facendo (Vibe Coding)
-
-```
 
 ---
