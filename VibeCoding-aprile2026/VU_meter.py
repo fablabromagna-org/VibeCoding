@@ -22,8 +22,8 @@ ATTACK_TAU  = 0.02
 RELEASE_TAU = 0.50
 
 # TARATURA (dai tuoi dati)
-NOISE_GATE = 1800
-AMP_FULL_SCALE = 32000
+NOISE_GATE = 4000
+AMP_FULL_SCALE = 8000
 
 SLEEP = 0.005
 
@@ -46,6 +46,7 @@ env = 0.0
 meter = 0.0
 
 last_t = time.monotonic()
+print("VU_meter")
 
 while True:
     now = time.monotonic()
