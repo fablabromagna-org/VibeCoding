@@ -1,6 +1,8 @@
 # VibeCoding
-materiali del corso Vibe Coding con Led e Sensori.
+materiali del corso Vibe Coding con Led e Sensori
+
 2 febbraio 2026 - Santarcangelo
+
 10 aprile 2026 - Rimini
 
 Esempio di riepilogo usando ChatGPT versione free.
