@@ -19,9 +19,6 @@ requests = adafruit_requests.Session(pool, ssl.create_default_context())
 
 URL = "https://allertameteo.regione.emilia-romagna.it/o/api/allerta/get-time-series/?https://allertameteo.regione.emilia-romagna.it/web/guest/grafico-sensori?p_p_id=AllertaGraficoPortlet&p_p_lifecycle=0&_AllertaGraficoPortlet_mvcRenderCommandName=%2Fallerta%2Fanimazione%2Fgrafico&r=2297/254,0,0/103,2000,-,-/B12101/2026-02-07/2026-02-09&stazione=2297&variabile=254,0,0/103,2000,-,-/B12101"
 
-#2297&variabile=254,0,0/103,2000,-,-/B12101
-
-
 print("Richiesta dati meteo...")
 response = requests.get(URL)
 
@@ -40,12 +37,13 @@ for punto in data:
     v = punto["v"]
 
     if adesso - t <= tre_giorni:
-        somma = somma + v
-        conteggio = conteggio + 1
+        temp_c = v - 273.15  # conversione Kelvin → Celsius
+        somma += temp_c
+        conteggio += 1
 
 if conteggio > 0:
     media = somma / conteggio
     print("Media temperatura ultimi 3 giorni:")
-    print(media, "°C")
+    print(round(media, 2), "°C")
 else:
     print("Nessun dato disponibile per gli ultimi 3 giorni")

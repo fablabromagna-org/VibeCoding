@@ -4,11 +4,12 @@ import analogio
 import neopixel
 
 # ingresso analogico: potenziometro
-pot = analogio.AnalogIn(board.A2)
+pot = analogio.AnalogIn(board.IO2)
 
 # strip di LED WS2812
-num_led = 8
-pixels = neopixel.NeoPixel(board.D9, num_led, brightness=0.3, auto_write=False)
+NUM_LED = 8
+pixels = neopixel.NeoPixel(board.IO20, NUM_LED, pixel_order=neopixel.RGBW, auto_write=True)
+pixels.brightness = 0.5
 
 while True:
     # valore del potenziometro
@@ -29,7 +30,7 @@ while True:
     #led_accesi = valore // (64000/num_led)
     
     # proporzione ma con scaling del valore
-    led_accesi = (valore // 1000) * num_led // 64
+    led_accesi = (valore // 1000) * NUM_LED // 64
    
     print( led_accesi)
     
@@ -42,4 +43,4 @@ while True:
         pixels[i] = (0, 50, 0)   # verde
     
     pixels.show()
-    time.sleep(0.05)
+    time.sleep(0.5)

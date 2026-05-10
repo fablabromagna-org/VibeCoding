@@ -7,3 +7,17 @@ Controllare funzionamento del Vibe sensor con WiFi Mikrotik Ospiti-88
 
 
 
+ESP32-C3 SuperMini   board.IO20(neopixel), board.IO2(sensore analogico)
+ESP32-C6 XIAO        board.D9(neopixel), board.A2(sensore analogico)
+
+https://allertameteo.regione.emilia-romagna.it/web/guest/grafico-sensori?p_p_id=AllertaGraficoPortlet&p_p_lifecycle=0&_AllertaGraficoPortlet_mvcRenderCommandName=%2Fallerta%2Fanimazione%2Fgrafico&r=2297/254,0,0/103,2000,-,-/B12101/2026-04-03/2026-04-05&stazione=2297&variabile=254,0,0/103,2000,-,-/B12101
+
+https://allertameteo.regione.emilia-romagna.it/o/api/allerta/get-time-series/?stazione=2297&variabile=254,0,0/103,2000,-,-/B12101
+
+git clone --depth 1 --single-branch --branch versione_arduino git@github.com:fablabromagna-org/lvgl9_on_black_pill.git
+󰁞  Code (128) ❯ git clone --depth 1 --single-branch --branch versione_arduino git@github.com:fablabromagna-org/lvgl9_on_black_pill.git
+Cloning into 'lvgl9_on_black_pill'...
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])?

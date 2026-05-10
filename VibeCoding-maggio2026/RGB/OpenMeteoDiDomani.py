@@ -7,7 +7,19 @@ import adafruit_requests
 import time
 
 # LED
-leds = neopixel.NeoPixel(board.IO20, 8)
+NUM_LED = 8
+pixels = neopixel.NeoPixel(board.IO20, NUM_LED, pixel_order=neopixel.RGB, auto_write=True)
+pixels.brightness = 0.1
+
+# GRBW
+OFF = (0, 0, 0, 0)
+GREEN = (255, 0, 0, 0)
+RED = (0, 255, 0, 0)
+BLUE = (0, 0,  255, 0)
+CIANO = (255, 0, 255, 0)
+YELLOW = (100, 255, 0, 0)
+MAGENTA = (0, 255,  255, 0)
+WHITE = (0, 0, 0, 255)
 
 # WiFi
 wifi.radio.connect("Ospiti-88", "Ospiti-88")
@@ -38,14 +50,14 @@ while True:
 
     # colori
     if livello <= 2:
-        colore = (0, 10, 20)     # azzurro
+        colore = CIANO     
     elif livello <= 5:
-        colore = (20, 8, 0)      # arancione
+        colore = YELLOW
     else:
-        colore = (20, 0, 0)      # rosso
+        colore = RED
 
-    leds.fill((0, 0, 0))
-    leds[livello] = colore
+    pixels.fill( OFF )
+    pixels[livello] = colore
 
     response.close()
 
