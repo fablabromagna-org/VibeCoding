@@ -7,7 +7,7 @@ A bordo ho già montato il firmware Circuit Python versione 10.
 
 L'idea è di utilizzare 
 - l'ingresso analogico A2 collegato al pin IO2 collegato ad un sensore 
-- l'uscita digitale D20, collegata al pin IO20 per pilotare 8 led WS2812.
+- l'uscita digitale board.IO20 per pilotare 8 led WS2812.
 - il pixel order è RGBW ma nella realtà l'ordine è (verde, rosso, blu, bianco
 
 Sull'ingresso A2 posso usare, uno alla volta, i sensori analogici della serie Grove di Seeed
